@@ -1,0 +1,14 @@
+  import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String x = s.replaceAll("oo","o");
+        x = x.replaceAll("aa","a");
+        x= x.replaceAll("ee","e");
+        x= x.replaceAll("ii","i");
+        x= x.replaceAll("uu","u");
+        System.out.println(x);
+    }
+}
