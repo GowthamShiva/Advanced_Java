@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String a=sc.nextLine();
+         char arr[] = a.toCharArray();
+         int n=a.length();
+         char temp;
+         for(int i=0;i<arr.length;i++){
+             for(int j=0;j<arr.length;j++){
+                 if(arr[i]<arr[j]){
+                     temp=arr[i];
+                     arr[i]=arr[j];
+                     arr[j]=(char)temp;
+                 }
+             }
+         }
+        int [] fre=new int [n];
+        int i,j;
+        
+    for(i=0;i<n;i++){
+        fre[i]=1;
+        for(j=i+1;j<n;j++){
+        if(arr[i]==arr[j]){
+            fre[i]++;
+            arr[j]=0;
+        }   
+        }
+    }
+    for(i=0;i<n;i++){
+        if(arr[i]!=' '&& arr[i]!=0)
+        System.out.println(arr[i]+"-"+fre[i]);
+    }
+}
+}
