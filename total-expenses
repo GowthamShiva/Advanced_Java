@@ -1,0 +1,19 @@
+import java.util.*;
+import java.io.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        double a,b,c,d;
+        a=sc.nextDouble();
+        b=sc.nextDouble();
+        c=sc.nextDouble();
+        d=sc.nextDouble();
+        Double tot=a+b+c+d;
+        System.out.println("Total expenses : Rs."+tot+"0");
+        System.out.println("Branding expenses percentage : "+(a*100)/tot+"0%");
+        System.out.println("Travel expenses percentage : "+(b*100)/tot+"0%");
+        System.out.println("Food expenses percentage : "+(c*100)/tot+"0%");
+        System.out.println("Logistics expenses percentage : "+(d*100)/tot+"0%");
+    }
+}
