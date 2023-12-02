@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        
+        String a=sc.nextLine();
+        String b=sc.nextLine();
+        String c=sc.nextLine();
+        String d=sc.nextLine();
+        String a1=sc.nextLine();
+        String b1=sc.nextLine();
+        String c1=sc.nextLine();
+        String d1=sc.nextLine();
+        if(d.equals(d1)){
+            System.out.println("User 1 and User 2 are equal");
+        }
+        else{
+            System.out.println("User 1 and User 2 are not equal");
+            
+        }
+    }
+}
