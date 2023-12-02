@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+class CountLetters {
+   public static void main(String args[]) throws Exception{
+       Scanner sc=new Scanner(System.in);
+       String s=sc.nextLine();
+       int a=s.length();
+       int m=0,n=0;
+       for(int i=0;i<a;i++){
+           if(Character.isUpperCase(s.charAt(i)))
+           m++;
+           
+           if(Character.isLowerCase(s.charAt(i)))
+           n++;
+       }
+       System.out.println(m);
+       System.out.println(n);
+   }
+}
