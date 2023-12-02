@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Address{
+    void displayAddress(){
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String b=sc.nextLine();
+        String c=sc.nextLine();
+        String d=sc.nextLine();
+        System.out.println("Street: "+a);
+        System.out.println("City: "+b);
+        System.out.println("Pincode: "+c);
+        System.out.println("Country : "+d);
+    }
+}
+
+class AddressMain{
+    public static void main(String args[]){
+
+        Address s1=new Address();
+        s1.displayAddress();
+    }
+}
